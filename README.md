@@ -1,4 +1,4 @@
-Before any use modify the email address and the password to connect to your LinkedIN account
+Before any use modify the email address and the password to connect to your LinkedIN account in app.js
 
 set HEADLESS = FASLE mode for debug
 
