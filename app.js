@@ -17,9 +17,9 @@ start_browser().then(async () => {
     await page.goto("https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin/", { waitUntil: 'load' });
     await page.waitFor(3000)
     await page.click('#username')
-    await page.keyboard.type('loustyveldidier@gmail.com');
+    await page.keyboard.type('YOUR_MAIL');
     await page.click('[id="password"]')
-    await page.keyboard.type('@complexpro88');
+    await page.keyboard.type('YOUR_PASSWORD');
     await page.click('[type="submit"]')
     await page.goto("https://www.linkedin.com/mynetwork/", { timeout: 0, waitUntil: 'load' });
     await page.evaluate(() => {
