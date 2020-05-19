@@ -1,9 +1,9 @@
-Avant toute utilisation modifier l'adresse mail et le mot de passe pour vous connecter à votre commpte linkedIN
+Before any use modify the email address and the password to connect to your LinkedIN account
 
-mettre le mode HEADLESS == FASLE pour debug
+set HEADLESS = FASLE mode for debug
 
-Ce module lance des invitations linkedIN toutes les heures
+This module sends linkedIN invitations every hour
 
-La variable setinterval peut être modifier
+The variable setinterval can be modified
 
 NPM INSTALL
