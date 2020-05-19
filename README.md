@@ -7,3 +7,6 @@ This module sends linkedIN invitations every hour
 The variable setinterval can be modified
 
 NPM INSTALL
+or npm install puppeteer for dependance
+
+Node app for start
