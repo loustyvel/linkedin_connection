@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 async function start_browser() {
     browser = await puppeteer.launch({
         // executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
+        //modify headless for debug
         headless: true,
         defaultViewport: null,
         slowMo: 250,
@@ -17,8 +18,10 @@ start_browser().then(async () => {
     await page.goto("https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin/", { waitUntil: 'load' });
     await page.waitFor(3000)
     await page.click('#username')
+        // modify mail account
     await page.keyboard.type('YOUR_MAIL');
     await page.click('[id="password"]')
+        // modify password account
     await page.keyboard.type('YOUR_PASSWORD');
     await page.click('[type="submit"]')
     await page.goto("https://www.linkedin.com/mynetwork/", { timeout: 0, waitUntil: 'load' });
@@ -27,7 +30,7 @@ start_browser().then(async () => {
             e => e.click())
     });
     await page.screenshot({ path: 'screenshot0.png' })
-
+//the function setInterval refreshes the page every hour
     let connect = async function connect_() {
 
         try {
